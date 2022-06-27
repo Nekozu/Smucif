@@ -3,7 +3,8 @@ const pack = require('packagescrapers')
 const tiktok = require('tiktok-scraper-without-watermark')
 const { exec } = require("child_process");
 const axios = require('axios')
-const bot = new Telegraf("5311910608:AAHs6Mxiw6efKEI1UEIIGW-_cW9fMQyihQQ")
+const bot = new Telegraf(process.env.token)
+const owner = process.env.owner
 
 bot.command('start', (ctx) => ctx.reply("Hi "+ctx.from.username+" type /help to see bot menu 😁", { ...Markup.inlineKeyboard([ Markup.button.url('Developer', 't.me/scerviez') ]) } ));
 
@@ -35,7 +36,7 @@ bot.command('pin', (ctx)=>{
 
 bot.command('fdb', (ctx)=>{                                                                                                                                                                                                                                 
     const pesan = ctx.message.message_id
-    ctx.telegram.forwardMessage(1716000402, ctx.from.id, pesan)
+    ctx.telegram.forwardMessage(owner, ctx.from.id, pesan)
     ctx.reply('Your Feedback Has Been Sended')
 })
 
