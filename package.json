@@ -9,11 +9,11 @@
     "tiktok-downloader": "^0.0.4",
     "tiktok-scraper-without-watermark": "^1.1.3"
   },
-  "name": "kurayatimbot",
+  "name": "smucif",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
@@ -23,8 +23,8 @@
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/kurayatim/KurayatimBot/issues"
+    "url": "https://github.com/Nekozu/smucif/issues"
   },
-  "homepage": "https://github.com/kurayatim/KurayatimBot#readme",
+  "homepage": "https://github.com/Nekozu/smucif#readme",
   "description": ""
 }
